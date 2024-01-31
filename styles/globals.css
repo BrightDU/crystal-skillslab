@@ -62,3 +62,18 @@ a {
     @apply mx-3 md:mx-8 bg-yellow-base h-10 w-10 rounded-full text-center items-center align-middle pt-2
   }
 }
+
+@media screen and (max-width: 768px) {
+  .navv{
+    flex-direction: column;
+    top: -30rem;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    padding: 2rem;
+    transition: .5s;
+  }
+  .show{
+    top: 4rem;
+  }
+}
