@@ -66,6 +66,7 @@ a {
 @media screen and (max-width: 768px) {
   .navv{
     flex-direction: column;
+    justify-content: flex-start;
     top: -30rem;
     width: 100%;
     left: 0;
