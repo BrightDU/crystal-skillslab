@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.schoolbell-font {
+  font-family: 'Schoolbell', cursive;
+}
+
+.poppins-font {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+@layer components{
+  .download_button {
+    @apply rounded-3xl bg-yellow-base text-gray-600 px-6 py-2 m-2 hover:bg-yellow-base hover:shadow-xl hover:ease-in-out;
+  }
+}
+
+.crafty-girl-font {
+  font-family: 'Crafty Girls', cursive;
+
+}
+
+.send-to-back {
+  z-index: -1;
+}
+
+.box-wave-bottom {
+    --mask:
+      radial-gradient(188.68px at 50% 260.00px,#000 99%,#0000 101%) calc(50% - 200px) 0/400px 51% repeat-x,
+      radial-gradient(188.68px at 50% -160px,#0000 99%,#000 101%) 50% 100px/400px calc(51% - 100px) repeat-x,
+      radial-gradient(188.68px at 50% calc(100% - 260.00px),#000 99%,#0000 101%) calc(50% - 200px) 100%/400px 51% repeat-x,
+      radial-gradient(188.68px at 50% calc(100% + 160.00px),#0000 99%,#000 101%) 50% calc(100% - 100px)/400px calc(51% - 100px) repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+  
+}
+
+.bottom-arc {
+  border-radius: 0 0  104%  104% / 9% 99% 22% 20%;
+}
+
+@layer utilities {
+  .download_page_number {
+    @apply mx-3 md:mx-8 bg-yellow-base h-10 w-10 rounded-full text-center items-center align-middle pt-2
+  }
+}
