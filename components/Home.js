@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { courseCatalog } from './catalog';
 import Alumni from './Alumni';
+import Link from 'next/link';
 
 const HomePage = () => {
 
@@ -25,7 +26,7 @@ const HomePage = () => {
               We provide the incusive learning environment, tools, mentorship, and support you need to level up your skils and stay relevant.
             </p>
             <div className="flex md:flex-row flex-col gap-4 items-center justify-center">
-            <div className="ml-4 mr-4 items-center bg-white rounded-xl hover:shadow-lg shadow-md p-4">
+              <div className="ml-4 mr-4 items-center bg-white rounded-xl hover:shadow-lg shadow-md p-4">
                 <Image className="mx-auto" src="/images/accessibility.svg" width="300" height="150" alt="multi language" />
                 <h3 className="text-lg font-semibold text-center">Accessible and Inclusive</h3>
               </div>
@@ -46,20 +47,23 @@ const HomePage = () => {
           <div className="text-center pb-0">
             <h2 className="text-2xl font-semibold pt-20">Choose from our course catalog</h2>
             <div className="max-w-xs md:max-w-4xl mx-auto py-12 gap-6 grid grid-cols-1 md:grid-cols-3">
-              {courseCatalog.map(({courseName, courseThumbNailImage, courseThumbNailDescription}, index) => (
-              <div key={index} className=" items-center bg-white hover:bg-[#FADF24] rounded-xl hover:shadow-lg shadow-md max-w-xs">
-                <Image className="mx-auto" src={courseThumbNailImage} width="300" height="200" alt="accessibility" />
-                <div className="p-4">
-                <h3 className="text-lg font-semibold">{courseName}</h3>
-                <p className="text-base">{courseThumbNailDescription}</p>
-                </div>
-                {/* <a href='https://forms.gle/GEYyC3dx94pnBSdH6'><button type="button" className="hover:bg-yellow bg-[#850299] rounded-3xl  text-white hover:text-green-base-dark active:bg-[#850299] font-bold uppercase text-sm px-6 py-3 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 bg-yellow-base">Enroll Now</button></a> */}
-              </div>
+              {courseCatalog.map(({ courseName, courseThumbNailImage, courseThumbNailDescription, courseId }, index) => (
+                <Link href={`/courses/${courseId}`}>
+
+                  <div key={index} className=" items-center bg-white hover:bg-[#FADF24] rounded-xl hover:shadow-lg shadow-md max-w-xs cursor-pointer">
+                    <Image className="mx-auto" src={courseThumbNailImage} width="300" height="200" alt="accessibility" />
+                    <div className="p-4">
+                      <h3 className="text-lg font-semibold">{courseName}</h3>
+                      <p className="text-base">{courseThumbNailDescription}</p>
+                    </div>
+                    {/* <a href='https://forms.gle/GEYyC3dx94pnBSdH6'><button type="button" className="hover:bg-yellow bg-[#850299] rounded-3xl  text-white hover:text-green-base-dark active:bg-[#850299] font-bold uppercase text-sm px-6 py-3 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 bg-yellow-base">Enroll Now</button></a> */}
+                  </div>
+                </Link>
               ))}
-              
+
             </div>
           </div>
-           </section>
+        </section>
 
         <Alumni />
 

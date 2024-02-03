@@ -77,7 +77,7 @@ export const courseCatalog = [
 export const courseDetails = [
     {
       courseDetailId: "1",
-      courseName: "Cyber Security",
+      courseName: "Product Design",
       courseOverview: "this is the course overview.",
       courseBannerImage: "",
       skillsYouWillLearn: [
