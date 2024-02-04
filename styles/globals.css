@@ -79,3 +79,7 @@ a {
     top: 4rem;
   }
 }
+.bann{
+  background-image: url("/images/banner.png");
+  background-size: cover;
+}
