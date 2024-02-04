@@ -85,7 +85,7 @@ const Course = () => {
           </div>
 
           <div className=" flex items-center justify-center absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-[grey]">
-            <div className="bg-white">
+            <div className="bg-white max-w-[500px]">
               <div>
                 <h1 className="text-4xl ">Introduction to HTML 5</h1>
                 <p>Module-1: 5 lessons</p>
@@ -107,10 +107,10 @@ const Course = () => {
                 <p className="font-light">Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
               </div>
               <div>
-                <h1 className="text-4xl ">Introduction to CSS 3</h1>
+                <h1 className="text-4xl ">Introduction to Front-end and Backend Frameworks</h1>
                 <p>Module-1: 5 lessons</p>
                 <p className="font-light">Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
-              </div>Introduction to Front-end and Backend Frameworks
+              </div>
             </div>
           </div>
         </div>
