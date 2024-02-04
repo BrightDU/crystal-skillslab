@@ -84,33 +84,39 @@ const Course = () => {
             </div>
           </div>
 
-          <div className=" flex items-center justify-center absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-[grey]">
-            <div className="bg-white max-w-[500px]">
+          <div className={`${showModal ? 'flex' : 'hidden'} items-center justify-center absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-[grey] pt-[650px]`}>
+            <div className="bg-white max-w-[500px] rounded-lg p-7 flex flex-col gap-4">
               <div>
-                <h1 className="text-4xl ">Introduction to HTML 5</h1>
+                <h1 className="text-3xl ">Introduction to HTML 5</h1>
                 <p>Module-1: 5 lessons</p>
                 <p className="font-light">Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
               </div>
               <div>
-                <h1 className="text-4xl ">Introduction to CSS 3</h1>
+                <h1 className="text-3xl ">Introduction to CSS 3</h1>
                 <p>Module-2: 7 lessons</p>
                 <p className="font-light">Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
               </div>
               <div>
-                <h1 className="text-4xl ">Introduction to JavaScript</h1>
+                <h1 className="text-3xl ">Introduction to JavaScript</h1>
                 <p>Module-3: 10 lessons</p>
                 <p className="font-light">Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
               </div>
               <div>
-                <h1 className="text-4xl ">Putting It All Together</h1>
+                <h1 className="text-3xl ">Putting It All Together</h1>
                 <p>Module-4: 5 lessons</p>
                 <p className="font-light">Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
               </div>
               <div>
-                <h1 className="text-4xl ">Introduction to Front-end and Backend Frameworks</h1>
-                <p>Module-1: 5 lessons</p>
+                <h1 className="text-3xl ">Introduction to Front-end and Backend Frameworks</h1>
+                <p>Module-5: 5 lessons</p>
                 <p className="font-light">Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
               </div>
+              <div>
+                <h1 className="text-3xl ">Deploying an application</h1>
+                <p>Module-6: 2 lessons</p>
+                <p className="font-light">Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
+              </div>
+              <button className="px-5 py-2 bg-[purple] rounded-full text-xl font-semibold" onClick={changeModalState}>CLOSE</button>
             </div>
           </div>
         </div>
