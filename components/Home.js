@@ -21,9 +21,9 @@ const HomePage = () => {
             {/* <div className="w-[500px] h-[500px] bg-black"></div> */}
           </div>
           <div className="bg-[#00ffc8] py-6 px-10 flex flex-col gap-6">
-            <p className="text-center">Crystal Academy is an arm of Crystal EdTech, where we make technology education more accesible and inclusive for youths and adults with diverse abilities and special learning needs. Hence, we combine bth online and instructor-led training approach to enable equal participation intechnology and digital and digital literacy.
+            <p className="text-center">Crystal Academy is an arm of Crystal EdTech, where we make technology education more accessible and inclusive for youths and adults with diverse abilities and special learning needs. Hence, we combine both online and instructor-led training approach to enable equal participation in technology and digital literacy.
               <br />
-              We provide the incusive learning environment, tools, mentorship, and support you need to level up your skils and stay relevant.
+              We provide the incusive learning environment, tools, mentorship, and support you need to level up your skills and stay relevant.
             </p>
             <div className="flex md:flex-row flex-col gap-4 items-center justify-center">
               <div className="ml-4 mr-4 items-center bg-white rounded-xl hover:shadow-lg shadow-md p-4">

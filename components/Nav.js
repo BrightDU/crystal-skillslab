@@ -19,7 +19,7 @@ const Nav = () => {
           <Image src="/images/skillsLab_dark.png" width="150" height="40" className="" alt="Crystal Academy" />
         </div>
         <div className={`flex gap-8 items-center md:relative navv ${menuToggled ? 'show' : ''} absolute`}>
-          <h3 className=" font-semibold" onClick={clickNav}><a href="#home" >Home</a></h3>
+          <Link href="/"><h3 className="cursor-pointer font-semibold" onClick={clickNav}>Home</h3></Link> 
           <h3 className=" font-semibold" onClick={clickNav}><a href="#products" >Course</a></h3>
           <h3 className=" font-semibold" onClick={clickNav}><a href="#alumni" >Alumni</a></h3>
           <button className="border-[2px] border-[green] p-2 rounded-full text-[green]" onClick={clickNav}><a href="#products" >Find your course</a></button>

@@ -210,13 +210,14 @@ const Course = () => {
           </div>
         </div>
       )
-    } else {
-      return (
-        <div key={index} className="pt-24 text-center">
-          <p>Course not found</p>
-        </div>
-      )
-    }
+    } 
+    // else {
+    //   return (
+    //     <div key={index} className="pt-24 text-center">
+    //       <p>Course not found</p>
+    //     </div>
+    //   )
+    // }
   })
 
   return (

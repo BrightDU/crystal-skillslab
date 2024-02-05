@@ -51,7 +51,7 @@ export const courseCatalog = [
     {
       courseId: "9",
       courseName: "Blockchain and Web3 Development",
-      courseThumbNailImage: "/images/Startups.png",
+      courseThumbNailImage: "/images/blockchain.png",
       courseThumbNailDescription: "Learn how blockchain technology powers Web3 decentralized apps (DApps), enhancing secured transactions, commuinication, and information sharing on the web.",
     },
     {
@@ -116,5 +116,467 @@ export const courseDetails = [
         "review 1",
         "review 2"
       ]
-    }
+    },
+    {
+      courseDetailId: "2",
+      courseName: "Web Development",
+      courseOverview: "Learn to design, develop, test, and deploy high-quality applications that form the foundation for the applications used by modern businesses.",
+      courseBannerImage: "",
+      skillsYouWillLearn: [
+        "skill-1",
+        "skill-2",
+        "skill-3",
+        "skill-4"
+      ],
+      whatYouWillLearn: [
+        "You will learn 1",
+        "You will learn 2",
+        "You will learn 3"
+      ],
+      prerequisite: [
+        "prerequisite 1",
+         "prerequisite 2",
+         "prerequisite 3"
+      ],
+      duration: "4 months",
+      courseLevel: "Beginners",
+      courseDeliveryMethods: [
+        {
+          method: "Instructor-led Classroom",
+          tuitionFee: "$500"
+        },
+        {
+          method: "Instructor-led online live",
+          tuitionFee: "$800"
+        },
+        {
+         method: "Online Self-guided",
+         tuitionFee: "$200"
+        }
+      ],
+      courseReviews: [
+        "review 1",
+        "review 2"
+      ]
+    },
+    {
+      courseDetailId: "3",
+      courseName: "Project Management",
+      courseOverview: "Learn to design, develop, test, and deploy high-quality applications that form the foundation for the applications used by modern businesses.",
+      courseBannerImage: "",
+      skillsYouWillLearn: [
+        "skill-1",
+        "skill-2",
+        "skill-3",
+        "skill-4"
+      ],
+      whatYouWillLearn: [
+        "You will learn 1",
+        "You will learn 2",
+        "You will learn 3"
+      ],
+      prerequisite: [
+        "prerequisite 1",
+         "prerequisite 2",
+         "prerequisite 3"
+      ],
+      duration: "4 months",
+      courseLevel: "Beginners",
+      courseDeliveryMethods: [
+        {
+          method: "Instructor-led Classroom",
+          tuitionFee: "$500"
+        },
+        {
+          method: "Instructor-led online live",
+          tuitionFee: "$800"
+        },
+        {
+         method: "Online Self-guided",
+         tuitionFee: "$200"
+        }
+      ],
+      courseReviews: [
+        "review 1",
+        "review 2"
+      ]
+    },
+    {
+      courseDetailId: "4",
+      courseName: "AI",
+      courseOverview: "Learn to design, develop, test, and deploy high-quality applications that form the foundation for the applications used by modern businesses.",
+      courseBannerImage: "",
+      skillsYouWillLearn: [
+        "skill-1",
+        "skill-2",
+        "skill-3",
+        "skill-4"
+      ],
+      whatYouWillLearn: [
+        "You will learn 1",
+        "You will learn 2",
+        "You will learn 3"
+      ],
+      prerequisite: [
+        "prerequisite 1",
+         "prerequisite 2",
+         "prerequisite 3"
+      ],
+      duration: "4 months",
+      courseLevel: "Beginners",
+      courseDeliveryMethods: [
+        {
+          method: "Instructor-led Classroom",
+          tuitionFee: "$500"
+        },
+        {
+          method: "Instructor-led online live",
+          tuitionFee: "$800"
+        },
+        {
+         method: "Online Self-guided",
+         tuitionFee: "$200"
+        }
+      ],
+      courseReviews: [
+        "review 1",
+        "review 2"
+      ]
+    },
+    {
+      courseDetailId: "5",
+      courseName: "Startups",
+      courseOverview: "Learn to design, develop, test, and deploy high-quality applications that form the foundation for the applications used by modern businesses.",
+      courseBannerImage: "",
+      skillsYouWillLearn: [
+        "skill-1",
+        "skill-2",
+        "skill-3",
+        "skill-4"
+      ],
+      whatYouWillLearn: [
+        "You will learn 1",
+        "You will learn 2",
+        "You will learn 3"
+      ],
+      prerequisite: [
+        "prerequisite 1",
+         "prerequisite 2",
+         "prerequisite 3"
+      ],
+      duration: "4 months",
+      courseLevel: "Beginners",
+      courseDeliveryMethods: [
+        {
+          method: "Instructor-led Classroom",
+          tuitionFee: "$500"
+        },
+        {
+          method: "Instructor-led online live",
+          tuitionFee: "$800"
+        },
+        {
+         method: "Online Self-guided",
+         tuitionFee: "$200"
+        }
+      ],
+      courseReviews: [
+        "review 1",
+        "review 2"
+      ]
+    },
+    {
+      courseDetailId: "6",
+      courseName: "Cybersecurity",
+      courseOverview: "Learn to design, develop, test, and deploy high-quality applications that form the foundation for the applications used by modern businesses.",
+      courseBannerImage: "",
+      skillsYouWillLearn: [
+        "skill-1",
+        "skill-2",
+        "skill-3",
+        "skill-4"
+      ],
+      whatYouWillLearn: [
+        "You will learn 1",
+        "You will learn 2",
+        "You will learn 3"
+      ],
+      prerequisite: [
+        "prerequisite 1",
+         "prerequisite 2",
+         "prerequisite 3"
+      ],
+      duration: "4 months",
+      courseLevel: "Beginners",
+      courseDeliveryMethods: [
+        {
+          method: "Instructor-led Classroom",
+          tuitionFee: "$500"
+        },
+        {
+          method: "Instructor-led online live",
+          tuitionFee: "$800"
+        },
+        {
+         method: "Online Self-guided",
+         tuitionFee: "$200"
+        }
+      ],
+      courseReviews: [
+        "review 1",
+        "review 2"
+      ]
+    },
+    {
+      courseDetailId: "7",
+      courseName: "Data Analytics",
+      courseOverview: "Learn to design, develop, test, and deploy high-quality applications that form the foundation for the applications used by modern businesses.",
+      courseBannerImage: "",
+      skillsYouWillLearn: [
+        "skill-1",
+        "skill-2",
+        "skill-3",
+        "skill-4"
+      ],
+      whatYouWillLearn: [
+        "You will learn 1",
+        "You will learn 2",
+        "You will learn 3"
+      ],
+      prerequisite: [
+        "prerequisite 1",
+         "prerequisite 2",
+         "prerequisite 3"
+      ],
+      duration: "4 months",
+      courseLevel: "Beginners",
+      courseDeliveryMethods: [
+        {
+          method: "Instructor-led Classroom",
+          tuitionFee: "$500"
+        },
+        {
+          method: "Instructor-led online live",
+          tuitionFee: "$800"
+        },
+        {
+         method: "Online Self-guided",
+         tuitionFee: "$200"
+        }
+      ],
+      courseReviews: [
+        "review 1",
+        "review 2"
+      ]
+    },
+    {
+      courseDetailId: "8",
+      courseName: "Teaching Special Education",
+      courseOverview: "Learn to design, develop, test, and deploy high-quality applications that form the foundation for the applications used by modern businesses.",
+      courseBannerImage: "",
+      skillsYouWillLearn: [
+        "skill-1",
+        "skill-2",
+        "skill-3",
+        "skill-4"
+      ],
+      whatYouWillLearn: [
+        "You will learn 1",
+        "You will learn 2",
+        "You will learn 3"
+      ],
+      prerequisite: [
+        "prerequisite 1",
+         "prerequisite 2",
+         "prerequisite 3"
+      ],
+      duration: "4 months",
+      courseLevel: "Beginners",
+      courseDeliveryMethods: [
+        {
+          method: "Instructor-led Classroom",
+          tuitionFee: "$500"
+        },
+        {
+          method: "Instructor-led online live",
+          tuitionFee: "$800"
+        },
+        {
+         method: "Online Self-guided",
+         tuitionFee: "$200"
+        }
+      ],
+      courseReviews: [
+        "review 1",
+        "review 2"
+      ]
+    },
+    {
+      courseDetailId: "9",
+      courseName: "Blockchain and web3 Development",
+      courseOverview: "Learn to design, develop, test, and deploy high-quality applications that form the foundation for the applications used by modern businesses.",
+      courseBannerImage: "",
+      skillsYouWillLearn: [
+        "skill-1",
+        "skill-2",
+        "skill-3",
+        "skill-4"
+      ],
+      whatYouWillLearn: [
+        "You will learn 1",
+        "You will learn 2",
+        "You will learn 3"
+      ],
+      prerequisite: [
+        "prerequisite 1",
+         "prerequisite 2",
+         "prerequisite 3"
+      ],
+      duration: "4 months",
+      courseLevel: "Beginners",
+      courseDeliveryMethods: [
+        {
+          method: "Instructor-led Classroom",
+          tuitionFee: "$500"
+        },
+        {
+          method: "Instructor-led online live",
+          tuitionFee: "$800"
+        },
+        {
+         method: "Online Self-guided",
+         tuitionFee: "$200"
+        }
+      ],
+      courseReviews: [
+        "review 1",
+        "review 2"
+      ]
+    },
+    {
+      courseDetailId: "10",
+      courseName: "Software Engineering",
+      courseOverview: "Learn to design, develop, test, and deploy high-quality applications that form the foundation for the applications used by modern businesses.",
+      courseBannerImage: "",
+      skillsYouWillLearn: [
+        "skill-1",
+        "skill-2",
+        "skill-3",
+        "skill-4"
+      ],
+      whatYouWillLearn: [
+        "You will learn 1",
+        "You will learn 2",
+        "You will learn 3"
+      ],
+      prerequisite: [
+        "prerequisite 1",
+         "prerequisite 2",
+         "prerequisite 3"
+      ],
+      duration: "4 months",
+      courseLevel: "Beginners",
+      courseDeliveryMethods: [
+        {
+          method: "Instructor-led Classroom",
+          tuitionFee: "$500"
+        },
+        {
+          method: "Instructor-led online live",
+          tuitionFee: "$800"
+        },
+        {
+         method: "Online Self-guided",
+         tuitionFee: "$200"
+        }
+      ],
+      courseReviews: [
+        "review 1",
+        "review 2"
+      ]
+    },
+    {
+      courseDetailId: "11",
+      courseName: "Digital Marketing",
+      courseOverview: "Learn to design, develop, test, and deploy high-quality applications that form the foundation for the applications used by modern businesses.",
+      courseBannerImage: "",
+      skillsYouWillLearn: [
+        "skill-1",
+        "skill-2",
+        "skill-3",
+        "skill-4"
+      ],
+      whatYouWillLearn: [
+        "You will learn 1",
+        "You will learn 2",
+        "You will learn 3"
+      ],
+      prerequisite: [
+        "prerequisite 1",
+         "prerequisite 2",
+         "prerequisite 3"
+      ],
+      duration: "4 months",
+      courseLevel: "Beginners",
+      courseDeliveryMethods: [
+        {
+          method: "Instructor-led Classroom",
+          tuitionFee: "$500"
+        },
+        {
+          method: "Instructor-led online live",
+          tuitionFee: "$800"
+        },
+        {
+         method: "Online Self-guided",
+         tuitionFee: "$200"
+        }
+      ],
+      courseReviews: [
+        "review 1",
+        "review 2"
+      ]
+    },
+    {
+      courseDetailId: "12",
+      courseName: "Computer Animation",
+      courseOverview: "Learn to design, develop, test, and deploy high-quality applications that form the foundation for the applications used by modern businesses.",
+      courseBannerImage: "",
+      skillsYouWillLearn: [
+        "skill-1",
+        "skill-2",
+        "skill-3",
+        "skill-4"
+      ],
+      whatYouWillLearn: [
+        "You will learn 1",
+        "You will learn 2",
+        "You will learn 3"
+      ],
+      prerequisite: [
+        "prerequisite 1",
+         "prerequisite 2",
+         "prerequisite 3"
+      ],
+      duration: "4 months",
+      courseLevel: "Beginners",
+      courseDeliveryMethods: [
+        {
+          method: "Instructor-led Classroom",
+          tuitionFee: "$500"
+        },
+        {
+          method: "Instructor-led online live",
+          tuitionFee: "$800"
+        },
+        {
+         method: "Online Self-guided",
+         tuitionFee: "$200"
+        }
+      ],
+      courseReviews: [
+        "review 1",
+        "review 2"
+      ]
+    },
   ]
