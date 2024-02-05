@@ -1,14 +1,26 @@
 import React, { useState } from 'react'
 import { courseDetails } from '../../components/catalog'
 import { useRouter } from 'next/router'
+import arrowdown from "../../public/images/arrow-down.svg"
+import arrowup from "../../public/images/arrow-up.svg"
+import Image from 'next/image'
 
 const Course = () => {
   const router = useRouter();
   const { id } = router.query;
   const [showModal, setShowModal] = useState(false);
+  const [activeAccord, setActiveAccord] = useState('');
 
   const changeModalState = () => {
     setShowModal(prev => !prev)
+  }
+
+  const toggleAccord = (e) => {
+    if (e.target.alt == activeAccord) {
+      setActiveAccord("")
+    }else{
+      setActiveAccord(e.target.alt)
+    }
   }
 
   const itemss = courseDetails.map(({ courseDetailId, courseName, courseBannerImage, courseOverview, courseLevel, courseDeliveryMethods, courseReviews, duration, skillsYouWillLearn, prerequisite }, index) => {
@@ -84,37 +96,114 @@ const Course = () => {
             </div>
           </div>
 
-          <div className={`${showModal ? 'flex' : 'hidden'} items-center justify-center absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-[grey] pt-[650px]`}>
-            <div className="bg-white max-w-[500px] rounded-lg p-7 flex flex-col gap-4">
+          <div className={`${showModal ? 'flex' : 'hidden'}  justify-center fixed top-0 left-0 right-0 bottom-0 w-full h-[100%] bg-[#2e2d2d8c] pt-[70px]`}>
+            <div className="bg-white max-w-[700px] rounded-lg p-7 flex flex-col gap-4 h-fit">
               <div>
-                <h1 className="text-3xl ">Introduction to HTML 5</h1>
-                <p>Module-1: 5 lessons</p>
-                <p className="font-light">Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
+                <div className="flex justify-between">
+                  <div>
+                    <h1 className="text-xl ">Introduction to HTML 5</h1>
+                    <p>Module-1: 5 lessons</p>
+                  </div>
+                  <Image 
+                  src={activeAccord == "html" ? arrowup : arrowdown} 
+                  alt="html" 
+                  width={50} 
+                  height={50} 
+                  className="cursor-pointer"
+                  onClick={toggleAccord}
+                  />
+                </div>
+                <p className={`${activeAccord == "html" ? 'block' : 'hidden'} font-light max-w-[500px]`}>Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
               </div>
               <div>
-                <h1 className="text-3xl ">Introduction to CSS 3</h1>
-                <p>Module-2: 7 lessons</p>
-                <p className="font-light">Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
+                <div className="flex justify-between">
+                  <div>
+                    <h1 className="text-xl ">Introduction to CSS 3</h1>
+                    <p>Module-2: 7 lessons</p>
+                  </div>
+                  <Image 
+                  className="cursor-pointer"
+                  src={activeAccord == "css" ? arrowup : arrowdown} 
+                  alt="css" 
+                  width={50} 
+                  height={50} 
+                  onClick={toggleAccord}
+                  />
+                </div>
+                <p className={`${activeAccord == "css" ? 'block' : 'hidden'} font-light max-w-[500px]`}>Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
+
               </div>
               <div>
-                <h1 className="text-3xl ">Introduction to JavaScript</h1>
-                <p>Module-3: 10 lessons</p>
-                <p className="font-light">Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
+                <div className="flex justify-between">
+                  <div>
+                    <h1 className="text-xl ">Introduction to JavaScript</h1>
+                    <p>Module-3: 10 lessons</p>
+
+                  </div>
+                  <Image 
+                  src={activeAccord == "js" ? arrowup : arrowdown} 
+                  alt="js" 
+                  width={50} 
+                  height={50} 
+                  onClick={toggleAccord}
+                  className="cursor-pointer"
+                  />
+                </div>
+                <p className={`${activeAccord == "js" ? 'block' : 'hidden'} font-light max-w-[500px]`}>Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
+
               </div>
               <div>
-                <h1 className="text-3xl ">Putting It All Together</h1>
-                <p>Module-4: 5 lessons</p>
-                <p className="font-light">Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
+                <div className="flex justify-between">
+                  <div>
+                    <h1 className="text-xl ">Putting It All Together</h1>
+                    <p>Module-4: 5 lessons</p>
+                  </div>
+                  <Image 
+                  src={activeAccord == "all" ? arrowup : arrowdown} 
+                  alt="all" 
+                  width={50} 
+                  height={50} 
+                  onClick={toggleAccord}
+                  className="cursor-pointer"
+                  />
+                </div>
+                <p className={`${activeAccord == "all" ? 'block' : 'hidden'} font-light max-w-[500px]`}>Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
+
               </div>
               <div>
-                <h1 className="text-3xl ">Introduction to Front-end and Backend Frameworks</h1>
-                <p>Module-5: 5 lessons</p>
-                <p className="font-light">Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
+                <div className="flex justify-between ">
+                  <div>
+
+                    <h1 className="text-xl ">Introduction to Front-end and Backend Frameworks</h1>
+                    <p>Module-5: 5 lessons</p>
+                  </div>
+                  <Image 
+                  src={activeAccord == "febe" ? arrowup : arrowdown} 
+                  alt="febe" 
+                  width={50} 
+                  height={50} 
+                  onClick={toggleAccord}
+                  className="cursor-pointer"
+                  />
+                </div>
+                <p className={`${activeAccord == "febe" ? 'block' : 'hidden'} font-light max-w-[500px]`}>Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
               </div>
               <div>
-                <h1 className="text-3xl ">Deploying an application</h1>
-                <p>Module-6: 2 lessons</p>
-                <p className="font-light">Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
+                <div className="flex justify-between">
+                  <div>
+                    <h1 className="text-xl ">Deploying an application</h1>
+                    <p>Module-6: 2 lessons</p>
+                  </div>
+                  <Image 
+                  src={activeAccord == "deploy" ? arrowup : arrowdown} 
+                  alt="deploy" 
+                  width={50} 
+                  height={50} 
+                  onClick={toggleAccord}
+                  className="cursor-pointer"
+                  />
+                </div>
+                <p className={`${activeAccord == "deploy" ? 'block' : 'hidden'} font-light max-w-[500px]`}>Learn to conceptualize, research, design and implement accessible products that meet the core needs of users by collaborating with developers and other team members.</p>
               </div>
               <button className="px-5 py-2 bg-[purple] rounded-full text-xl font-semibold" onClick={changeModalState}>CLOSE</button>
             </div>
@@ -123,7 +212,7 @@ const Course = () => {
       )
     } else {
       return (
-        <div className="pt-24 text-center">
+        <div key={index} className="pt-24 text-center">
           <p>Course not found</p>
         </div>
       )

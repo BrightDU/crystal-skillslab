@@ -48,7 +48,7 @@ const HomePage = () => {
             <h2 className="text-2xl font-semibold pt-20">Choose from our course catalog</h2>
             <div className="max-w-xs md:max-w-4xl mx-auto py-12 gap-6 grid grid-cols-1 md:grid-cols-3">
               {courseCatalog.map(({ courseName, courseThumbNailImage, courseThumbNailDescription, courseId }, index) => (
-                <Link href={`/courses/${courseId}`}>
+                <Link href={`/courses/${courseId}`} key={index}>
 
                   <div key={index} className=" items-center bg-white hover:bg-[#FADF24] rounded-xl hover:shadow-lg shadow-md max-w-xs cursor-pointer">
                     <Image className="mx-auto" src={courseThumbNailImage} width="300" height="200" alt="accessibility" />
