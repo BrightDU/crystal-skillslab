@@ -13,7 +13,7 @@ const Nav = () => {
     setMenuToggled(prev => !prev)
   }
   return (
-    <div className=" fixed w-full  shadow-md bg-white z-10">
+    <div className=" w-full  shadow-md bg-white z-10">
       <div className="flex px-14 py-3 items-center justify-between">
         <div className="flex items-center">
           <Image src="/images/skillsLab_dark.png" width="150" height="40" className="" alt="Crystal Academy" />
